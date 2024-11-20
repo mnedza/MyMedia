@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 interface AuthFormProps {
   hasAccount: boolean;
   setHasAccount: React.Dispatch<React.SetStateAction<boolean>>;
@@ -23,6 +25,7 @@ const AuthForm: React.FC<AuthFormProps> = ({ hasAccount, setHasAccount }) => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
     console.log("Form Submitted!");
   };
 
@@ -48,3 +51,6 @@ const AuthForm: React.FC<AuthFormProps> = ({ hasAccount, setHasAccount }) => {
 };
 
 export default AuthForm;
+
+
+// now make validation
