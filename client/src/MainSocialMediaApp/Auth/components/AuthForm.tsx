@@ -1,20 +1,9 @@
-import { useState } from "react";
+import { signInFields, signUpFields } from "./authFormFields";
 
 interface AuthFormProps {
   hasAccount: boolean;
   setHasAccount: React.Dispatch<React.SetStateAction<boolean>>;
 }
-
-const signInFields = [
-  { name: "email", type: "email" },
-  { name: "password", type: "password" },
-];
-
-const signUpFields = [
-  { name: "username", type: "text" },
-  ...signInFields,
-  { name: "confirmPassword", type: "password" },
-];
 
 const AuthForm: React.FC<AuthFormProps> = ({ hasAccount, setHasAccount }) => {
   const fields = hasAccount ? signInFields : signUpFields;
@@ -51,6 +40,3 @@ const AuthForm: React.FC<AuthFormProps> = ({ hasAccount, setHasAccount }) => {
 };
 
 export default AuthForm;
-
-
-// now make validation
