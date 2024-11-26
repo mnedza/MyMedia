@@ -1,0 +1,141 @@
+.componentContainer {
+  margin: 10rem;
+  margin-top: 5rem;
+  max-width: 80rem;
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: gray;
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  padding-left: 3rem;
+  width: 60%;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    to top right,
+    #f9ad1b -20%,
+    #f98512 30%,
+    #f23000 100%
+  );
+}
+
+.formTitle {
+  margin-top: 6rem;
+  margin-left: 5rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.field {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-bottom: 1.6rem;
+}
+
+.label {
+  margin-bottom: 0.8rem;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.input,
+.submitButton,
+.googleButton,
+.changeFormSubmit {
+  border-radius: 2rem;
+}
+
+.input {
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+.changeFormFieldContainer {
+  width: 35rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.span,
+.changeFormSubmit {
+  font-size: 1.4rem;
+}
+
+.span {
+  color: #fff;
+}
+
+.changeFormSubmit {
+  margin-left: 1rem;
+  color: #000;
+  border: none;
+  background: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.changeFormSubmit:hover {
+  color: #fff;
+}
+
+.changeFormSubmit,
+.submitButton,
+.googleButton {
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.submitButton,
+.googleButton {
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.input,
+.submitButton,
+.submitButton,
+.googleButton {
+  width: 35rem;
+}
+
+.googleButton {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.googleButton:hover {
+  background-color: rgb(182, 181, 181);
+}
+
+.submitButton {
+  margin-top: 2rem;
+  color: #fff;
+  background-color: #413434;
+}
+
+.submitButton:hover {
+  background-color: #fff;
+  color: #413434;
+}
