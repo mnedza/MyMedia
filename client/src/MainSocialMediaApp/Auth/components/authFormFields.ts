@@ -8,3 +8,4 @@ export const signUpFields = [
   ...signInFields,
   { name: "confirmPassword", type: "password" },
 ];
+
