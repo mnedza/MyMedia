@@ -3,7 +3,7 @@ import AuthForm from "../components/AuthForm";
 import Background from "../../../GeneralComponents/Background/Background";
 
 const AuthPage: React.FC = () => {
-  const [hasAccount, setHasAccount] = useState<boolean>(false);
+  const [hasAccount, setHasAccount] = useState<boolean>(true);
   return (
     <>
       <Background>
