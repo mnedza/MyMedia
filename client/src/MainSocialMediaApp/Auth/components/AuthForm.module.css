@@ -1,4 +1,8 @@
 .form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: flex-end; */
   margin: 0;
   padding: 2rem 6rem;
 
@@ -9,7 +13,7 @@
 
   border-radius: 2rem;
   box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
-  
+
   background: linear-gradient(
     to top right,
     #f9ad1b -20%,
@@ -52,6 +56,21 @@
 .googleButton,
 .changeFormSubmit {
   border-radius: 2rem;
+}
+
+.forgotPasswordButton {
+  color: #fff;
+  text-align: right;
+  margin-left: 1rem;
+  border: none;
+  background: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.forgotPasswordButton:hover {
+  color: rgb(255, 196, 128);
 }
 
 .input {

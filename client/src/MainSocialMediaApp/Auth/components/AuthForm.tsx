@@ -5,6 +5,7 @@ import classes from "./AuthForm.module.css";
 import FormComponent from "./FormComponent";
 import FormField from "./FormField";
 import FormButton from "./FormButton";
+import { Link } from "react-router-dom";
 
 interface AuthFormProps {
   hasAccount: boolean;
@@ -24,21 +25,34 @@ const AuthForm: React.FC<AuthFormProps> = ({ hasAccount, setHasAccount }) => {
     setHasAccount((prevState) => !prevState);
   };
 
+  const LinkClickedHandler = () => {
+    setHasAccount(true);
+  };
+
   return (
     <FormComponent onSubmit={handleSubmit}>
       <h1 className={classes.logo}>MyMedia</h1>
       <h2 className={classes.formTitle}>
         {hasAccount ? "Sign in to your account" : "Create your account"}
       </h2>
-
       {fields.map((field) => (
         <FormField key={field.name} name={field.name} type={field.type} />
       ))}
 
+      {hasAccount && (
+        <>
+          <Link
+            to="/reset-password"
+            onClick={LinkClickedHandler}
+            className={classes.forgotPasswordButton}
+          >
+            Forgot password?
+          </Link>
+        </>
+      )}
       <FormButton className={classes.submitButton} type="submit">
         {hasAccount ? "Sign In" : "Sign Up"}
       </FormButton>
-
       <div className={classes.changeFormFieldContainer}>
         <span className={classes.span}>
           {hasAccount ? "Dont have account?" : "Already have account?"}

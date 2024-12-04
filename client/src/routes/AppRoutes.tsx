@@ -8,7 +8,7 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<AuthPage />} />
         <Route path="/page" element={<h1>Page</h1>} />
-        <Route path="resetPassword" element={<ResetPasswordPage />} />
+        <Route path="reset-password" element={<ResetPasswordPage />} />
       </Routes>
     </BrowserRouter>
   );
