@@ -7,14 +7,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  border-radius: 2rem;
   box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  
   background: linear-gradient(
     to top right,
     #f9ad1b -20%,
     #f98512 30%,
     #f23000 100%
   );
-  border-radius: 2rem;
 }
 
 .logo {
