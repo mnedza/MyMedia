@@ -1,53 +1,43 @@
 .form {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: flex-end; */
   margin: 0;
   padding: 2rem 6rem;
-
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-
-  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--colorOfBackground);
   box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
-
-  background: linear-gradient(
-    to top right,
-    #f9ad1b -20%,
-    #f98512 30%,
-    #f23000 100%
-  );
+  border-radius: 2rem;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
+  color: var(--whiteColor);
   font-size: 3rem;
-  font-family: "Pacifico", cursive;
   text-align: center;
-  color: #fff;
+  font-family: "Pacifico", cursive;
 }
 
 .formTitle {
   margin-top: 2rem;
   margin-bottom: 3rem;
+  color: var(--whiteColor);
   font-size: 2.5rem;
   text-align: center;
-  color: #fff;
 }
 
 .field {
+  margin-bottom: 1.6rem;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  margin-bottom: 1.6rem;
 }
 
 .label {
-  padding-left: 1.5rem;
   margin-bottom: 0.8rem;
-  color: #fff;
+  padding-left: 1.5rem;
+  color: var(--whiteColor);
   font-size: 1.4rem;
 }
 
@@ -59,18 +49,18 @@
 }
 
 .forgotPasswordButton {
-  color: #fff;
-  text-align: right;
   margin-left: 1rem;
+  color: var(--whiteColor);
+  font-size: 1.4rem;
+  text-align: right;
   border: none;
   background: none;
-  font-size: 1.4rem;
-  cursor: pointer;
   transition: color 0.3s;
+  cursor: pointer;
 }
 
 .forgotPasswordButton:hover {
-  color: rgb(255, 196, 128);
+  color: var(--whiteHover);
 }
 
 .input {
@@ -81,14 +71,10 @@
   transition: border-color 0.2s ease;
 }
 
-.input:focus {
-  border-color: #007bff;
-}
-
 .changeFormFieldContainer {
-  width: 35rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+  width: 35rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,20 +86,19 @@
 }
 
 .span {
-  color: #fff;
+  color: var(--whiteColor);
 }
 
 .changeFormSubmit {
   margin-left: 1rem;
-  color: #000;
+  font-size: 1.4rem;
   border: none;
   background: none;
-  font-size: 1.4rem;
   cursor: pointer;
 }
 
 .changeFormSubmit:hover {
-  color: #fff;
+  color: var(--whiteColor);
 }
 
 .changeFormSubmit,
@@ -149,11 +134,11 @@
 
 .submitButton {
   margin-top: 2rem;
-  color: #fff;
-  background-color: #413434;
+  color: var(--whiteColor);
+  background-color: var(--colorSubmitButton);
 }
 
 .submitButton:hover {
-  background-color: #fff;
-  color: #413434;
+  color: var(--colorSubmitButton);
+  background-color: var(--whiteColor);
 }

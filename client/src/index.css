@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+:root {
+  --colorOfBackground: linear-gradient(
+    to top right,
+    #f9ad1b -20%,
+    #f98512 30%,
+    #f23000 100%
+  );
+
+  --whiteColor: #fff;
+  --whiteHover: rgb(250, 234, 213);
+  --colorSubmitButton: #413434;
+}
+
 
 * {
   margin: 0;
